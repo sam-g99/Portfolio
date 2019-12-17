@@ -1,0 +1,41 @@
+@mixin horizontal-spacing($spacing) {
+	margin-right: $spacing;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+@mixin breakpoint($size) {
+    @media only screen and (min-width: $size + px) {
+      @content;
+    }
+  }
+  @mixin breakpoint-height($size) {
+    @media only screen and (min-height: $size + px) and (min-width: 1200px) {
+      @content;
+    }
+  }
+  @mixin breakpoint-max($size) {
+    @media only screen and (max-width: $size + px) {
+      @content;
+    }
+  }
+  
+  @mixin vertical-spacing($spacing) {
+    margin-bottom: $spacing;
+  
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  @mixin flex($horizontal, $vertical) {
+    align-items: $vertical;
+    display: flex;
+    justify-content: $horizontal;
+  }
+  
+  @mixin page-container {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  
