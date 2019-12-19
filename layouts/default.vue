@@ -59,7 +59,7 @@ html {
 }
 /* width */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 8px;
 }
 
 /* Track */
@@ -74,7 +74,7 @@ html {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(59, 59, 59);
+  background: rgb(12, 12, 12);
 }
 h3 {
   color: #eaeaea;
