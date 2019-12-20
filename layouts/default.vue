@@ -57,6 +57,10 @@ html {
   color: #fff;
   background-color: #0e0e0e;
 }
+* {
+  scrollbar-color: rgb(14, 14, 14) #424242;
+  scrollbar-width: 2px;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 8px;
