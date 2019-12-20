@@ -59,7 +59,7 @@ html {
 }
 * {
   scrollbar-color: rgb(14, 14, 14) #424242;
-  scrollbar-width: 2px;
+  scrollbar-width: thin;
 }
 /* width */
 ::-webkit-scrollbar {
