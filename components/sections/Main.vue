@@ -5,7 +5,7 @@
       <p>Your friendly earthling web developer.</p>
       <Nav />
     </div>
-    <div
+    <a
       v-tooltip="{
         content: 'My Github',
         placement: 'left',
@@ -14,16 +14,13 @@
         offset: 10,
         delay: { show: 300, hide: 100 },
       }"
+      href="http://github.com/sam-g99"
+      target="_blank"
+      rel="noopener noreferrer"
       class="github-area"
     >
-      <a
-        href="http://github.com/sam-g99"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src="~/assets/images/github.svg" />
-      </a>
-    </div>
+      <img src="~/assets/images/github.svg" />
+    </a>
   </main>
 </template>
 
@@ -66,7 +63,9 @@ main {
   justify-content: center;
   min-height: 100vh;
   position: relative;
-  width: 100%;
+  width: 100vw;
+  overflow-x: hidden;
+
   .greeting {
     align-items: center;
     display: flex;
@@ -78,6 +77,7 @@ main {
     font-size: 90px;
     opacity: 0;
     text-shadow: 0px 1px 0px rgba(20, 20, 20, 0.75);
+    text-align: center;
     transform: translateY(-10px);
     cursor: default;
 
