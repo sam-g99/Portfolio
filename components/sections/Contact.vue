@@ -5,12 +5,18 @@
     </h2>
     <p>I'm always ready for a new challenge</p>
     <a ref="contact" href="mailto:samuel.graham099dev@gmail.com">Email Me</a>
-    <p class="copyright">©2019</p>
+    <p class="copyright">©{{ currentYear }}</p>
   </footer>
 </template>
 
 <script>
-export default {};
+export default {
+  computed: {
+    currentYear() {
+      return new Date().getFullYear();
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
