@@ -1,39 +1,6 @@
 export const state = () => ({
   projects: [
     {
-      title: 'Quiz Time',
-      description:
-        'A quiz platform for making quizzes with the capability to challenge users in real time using socket.io.',
-      img: 'quiz',
-      inProgress: true,
-      figma: `https://www.figma.com/file/PujPwVS4hUE
-      GFXEGgSgV7I/Quiz-Time-Mockup?node-id=0%3A1`,
-      tech: [
-        'HTML',
-        'SCSS',
-        'JavaScript',
-        'Vue',
-        'Node/Express',
-        'PostgreSQL',
-        'Sequelize',
-      ],
-      content: {
-        disclaimer:
-          'I already setup basic signup, login, quiz creation, and a little bit of setting up socket.io which you can take a look at in the github repo.',
-        learned: [
-          'Setting up a structure for relational database such as PostgreSQL',
-          'Utilizing an ORM (Sequelize)',
-          'Sessions, cookies, local storage',
-          'Login',
-          'Email verification',
-          'Modifying, creating, removing data from PostgreSQL',
-        ],
-      },
-      link: {
-        github: 'https://github.com/sam-g99/quiz-time-site',
-      },
-    },
-    {
       title: 'WebRTC Demo (Screen Sharing)',
       description:
         'A demo of what you can do with WebRTC. Screen sharing, chat, image sharing',
